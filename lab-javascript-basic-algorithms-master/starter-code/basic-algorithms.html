@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        // Names and Input
+        var hacker1 = 'Cleia';
+        console.log("The driver's name is " + hacker1)
+
+        var hacker2 = prompt('Qual seu nome?');
+        console.log("The navigator's name is " + hacker2)
+
+
+        if (hacker1.length > 4) {
+            console.log("The Driver has the longest name, it has 5 characters")
+
+        } else if (hacker2.length > 4) {
+            console.log("Yo, navigator got the longest name, it has 4 characters")
+        } else if (hacker1 == hacker2) {
+            console.log("wow, you both got equally long names, "+hacker1.length+" characters!!")
+        }
+
+        var name = "";
+
+        for (var i = 0; i < hacker1.length; i++) {
+
+            name += hacker1[i] + " ";
+
+        }
+
+
+
+        console.log(name)
+         name = "";
+
+        for (var i = hacker1.length - 1; i <= hacker1.length; i--) {
+
+
+            if (i == -1) {
+
+                break;
+            } else {
+                name += hacker1[i];
+            }
+
+
+
+
+        }
+
+        console.log(name)
+        //Palindrome
+        var nomeInvertido = "";
+        var palindrome = prompt("digite uma palavra");
+
+
+        for (var i = palindrome.length - 1; i <= palindrome.length; i--) {
+
+
+            if (i == -1) {
+
+                break;
+            } else {
+                nomeInvertido += palindrome[i];
+            }
+
+
+
+
+        }
+
+        if (nomeInvertido == palindrome) {
+
+            console.log("isso é um palindrome")
+        };
+
+
+        // Lorem ipsum generat
+        var lorenContains = []
+        var loren = "Lorem Ipsum is simply dummy text of the of printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+         
+        console.log("tamanho de caracteres: " + loren.trim().length)
+        lorenContains.push(loren.split(" "));
+        console.log(lorenContains   )
+        var count=0;
+
+        for (let i = 0; i <= lorenContains[0].length -1 ; i++) {
+
+            var aux = lorenContains[0][i]
+             console.log(aux)
+             if (aux.indexOf("et") == -1) {
+    
+                 count = count+1;
+                
+              }
+            
+        }
+        
+        console.log("essa palavra é encontrada: " +count + " vez(es)");
+
+
+    </script>
+    <title>Exec - IronHack</title>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
